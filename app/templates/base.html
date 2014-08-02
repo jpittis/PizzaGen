@@ -1,13 +1,15 @@
 <html>
     <head>
         <title>Pizza Picker</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
-    <div>
-        <a href="/">New Pizza</a>
-        <a href="/about">About</a>
-    </div>
-    <hr>
+    <ul class="navbar">
+        <li class="navbar"><a class="navbar" href="/"><b>New Pizza</b></a></li>
+        <li class="navbar"><a class="navbar" href="/about"><b>About</b></a></li>
+    </ul>
+    <br>
+    <br>
     {% block content %}{% endblock %}
     </body>
 </html>

@@ -1,0 +1,32 @@
+ul
+{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+li.navbar
+{
+    float: left;
+}
+a.navbar
+{
+    font-family: Arial;
+    display: block;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    background: #FF0000;
+    color: white;
+    text-decoration: none;
+}
+a:hover.navbar
+{
+    background: #CC0000;
+}
+.bodyfont
+{
+    font-family: Arial;
+    color: black;
+    text-decoration: none;
+}
