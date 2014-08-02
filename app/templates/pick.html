@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<form method=post action="/">
+    {{ form.cheese.label }} {{ form.cheese(size=2) }}
+    {{ form.meat.label }} {{ form.meat(size=2) }}
+    {{ form.veggies.label }} {{ form.veggies(size=2) }}
+    <input type="submit" value="Generate Pizza!">
+</form>
+<ol>
+{% for topping in toppinglist %}
+<li>{{ topping }}</li>
+{% endfor %}
+</ol>
+{% endblock %}
